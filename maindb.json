@@ -1,0 +1,59 @@
+{
+  "site": {
+    "name": "My Site",
+    "description": "My Site Description",
+    "logo": "https://via.placeholder.com/150",
+    "favicon": "https://via.placeholder.com/150"
+  },
+  "globals": {
+    "header": {},
+    "footer": {}
+  },
+  "pages": [
+    {
+      "title": "home",
+      "slug": "home",
+      "meta_title": "home",
+      "meta_description": "This is main home page \n",
+      "updated_at": "2025-04-29T09:02:50.778Z",
+      "sections": [
+        {
+          "title": "hero",
+          "page": "home",
+          "properties": [
+            {
+              "title": "title",
+              "type": "string",
+              "value": "Automate patient engagement with AI voice agents"
+            },
+            {
+              "title": "desc",
+              "type": "string",
+              "value": "Our AI voice agent handles calls, texts, and admin tasks like scheduling, referrals, and inquiries—so you don’t have to."
+            },
+            {
+              "title": "btnText",
+              "type": "string",
+              "value": "Get in touch"
+            },
+            {
+              "title": "rating",
+              "type": "string",
+              "value": "4.98"
+            },
+            {
+              "title": "ratingText",
+              "type": "string",
+              "value": "Top-rated business"
+            },
+            {
+              "title": "imglink",
+              "type": "string",
+              "value": "/img"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

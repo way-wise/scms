@@ -1,0 +1,298 @@
+{
+  "pages": {
+    "home": {
+      "header": {
+        "logo": "/logo.svg",
+        "navigation": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Case studies",
+            "url": "/case-studies"
+          },
+          {
+            "label": "Solutions",
+            "url": "/solutions",
+            "children": [
+              {
+                "label": "For Providers",
+                "url": "/solutions/providers"
+              },
+              {
+                "label": "For Office Managers",
+                "url": "/solutions/office-managers"
+              },
+              {
+                "label": "For Patients",
+                "url": "/solutions/patients"
+              }
+            ]
+          },
+          {
+            "label": "Technology",
+            "url": "/technology",
+            "children": [
+              {
+                "label": "AI Voice Agents",
+                "url": "/technology/ai-voice"
+              },
+              {
+                "label": "Integrations",
+                "url": "/technology/integrations"
+              }
+            ]
+          }
+        ],
+        "ctaButton": {
+          "label": "Get started",
+          "url": "/get-started"
+        }
+      },
+      "hero": {
+        "title": "Automate patient engagement with AI voice agents ",
+        "description": "Our AI voice agents handle calls, texts, and online booking like receptionists, schedulers, and inquirers—so you don't have to.",
+        "rating": 4.98,
+        "image": "/images/hero-image.png",
+        "ctaButton": {
+          "label": "Get started",
+          "url": "/get-started"
+        }
+      },
+      "stats": [
+        {
+          "value": "-99%",
+          "label": "no-shows",
+          "description": "Reduced"
+        },
+        {
+          "value": "-60%",
+          "label": "call volume",
+          "description": "Reduced"
+        },
+        {
+          "value": "85%",
+          "label": "call answer rate",
+          "description": "Improved"
+        },
+        {
+          "value": "375%",
+          "label": "ROI",
+          "description": "Increased"
+        },
+        {
+          "value": "24/7",
+          "label": "patient access",
+          "description": "Enabled"
+        },
+        {
+          "value": "87%",
+          "label": "staff satisfaction",
+          "description": "Improved"
+        }
+      ],
+      "partners": {
+        "title": "Trusted by innovative clinics",
+        "logos": [
+          {
+            "name": "Northwell",
+            "logo": "/logos/northwell.svg"
+          },
+          {
+            "name": "Bioreference",
+            "logo": "/logos/bioreference.svg"
+          },
+          {
+            "name": "CityMD",
+            "logo": "/logos/citymd.svg"
+          },
+          {
+            "name": "Epic",
+            "logo": "/logos/epic.svg"
+          },
+          {
+            "name": "Meditech",
+            "logo": "/logos/meditech.svg"
+          },
+          {
+            "name": "Cerner",
+            "logo": "/logos/cerner.svg"
+          },
+          {
+            "name": "Allscripts",
+            "logo": "/logos/allscripts.svg"
+          }
+        ]
+      },
+      "features": {
+        "title": "Enhance engagement with voice AI",
+        "description": "Transform patient interactions with our advanced AI voice agents, designed to deliver personalized and efficient healthcare experiences.",
+        "image": "/images/features-image.png",
+        "sidebar": [
+          {
+            "title": "Automated Appointment Management",
+            "isActive": true
+          },
+          {
+            "title": "Patient Reminders"
+          },
+          {
+            "title": "Customizable FAQs"
+          },
+          {
+            "title": "Triage and Escalation"
+          },
+          {
+            "title": "Onboarding"
+          },
+          {
+            "title": "Phone-based payments"
+          }
+        ],
+        "items": [
+          {
+            "title": "Seamless appointment scheduling",
+            "description": "Optimize your voice outreach for appointment confirmations, handling no-shows, and ensuring convenience. The flexible integration works with your existing EHR systems, providing a seamless workflow that benefits both your staff and patients."
+          }
+        ]
+      },
+      "integrations": {
+        "title": "Always connected to your EHR, every step of the way.",
+        "description": "",
+        "logos": [
+          {
+            "name": "Meditech",
+            "logo": "/logos/meditech.svg"
+          },
+          {
+            "name": "Oracle",
+            "logo": "/logos/oracle.svg"
+          },
+          {
+            "name": "Epic",
+            "logo": "/logos/epic.svg"
+          },
+          {
+            "name": "Veradigm",
+            "logo": "/logos/veradigm.svg"
+          },
+          {
+            "name": "Messaging",
+            "logo": "/logos/messaging.svg"
+          },
+          {
+            "name": "Elation",
+            "logo": "/logos/elation.svg"
+          }
+        ]
+      },
+      "benefits": [
+        {
+          "title": "Providers",
+          "image": "/images/providers.jpg",
+          "items": [
+            {
+              "text": "Eliminate no-shows"
+            },
+            {
+              "text": "Improve overall customer satisfaction scores"
+            },
+            {
+              "text": "Triage, handle, and update patient cases instead of sending to voicemail"
+            }
+          ]
+        },
+        {
+          "title": "Office Managers",
+          "image": "/images/office-managers.jpg",
+          "items": [
+            {
+              "text": "Reduce staff turnover"
+            },
+            {
+              "text": "Book more appointments"
+            },
+            {
+              "text": "Do seamless onboarding"
+            }
+          ]
+        },
+        {
+          "title": "Patients",
+          "image": "/images/patients.jpg",
+          "items": [
+            {
+              "text": "No more waiting time"
+            },
+            {
+              "text": "Get 24/7"
+            },
+            {
+              "text": "Experience white glove service every time"
+            }
+          ]
+        }
+      ],
+      "testimonials": {
+        "title": "Trusted by Healthcare Providers",
+        "items": [
+          {
+            "quote": "\"We've seen a noticeable drop in missed appointments and phone calls, which saves time for the whole staff. In addition, AI voice agents have been a game-changer for our front-desk staff, allowing them to focus on in-person patient care. That's a game-changer.\"",
+            "author": {
+              "name": "Linda M",
+              "title": "Office Manager",
+              "company": "Northeast Family Clinic",
+              "avatar": "/avatars/linda.jpg"
+            },
+            "rating": 5
+          },
+          {
+            "quote": "\"Automating AI receptionist has completely transformed our front desk operations. Patients love the quick responses and 24/7 availability. It's like having a reliable team member who never takes a break.\"",
+            "author": {
+              "name": "Ralph P",
+              "title": "Administrator",
+              "company": "Sunrise Recovery Center",
+              "avatar": "/avatars/ralph.jpg"
+            },
+            "rating": 5
+          }
+        ]
+      },
+      "contact": {
+        "title": "Have questions or need a custom solution? Reach out to us!",
+        "description": "",
+        "email": "info@healthvoice.ai",
+        "mapImage": "/images/map.png",
+        "ctaButton": {
+          "label": "Get started",
+          "url": "/get-started"
+        }
+      },
+      "footer": {
+        "links": [
+          {
+            "label": "Privacy Policy",
+            "url": "/privacy"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "/terms"
+          },
+          {
+            "label": "Cookies",
+            "url": "/cookies"
+          }
+        ],
+        "copyright": "© 2023 Voice Health"
+      }
+    }
+  },
+  "settings": {
+    "siteName": "Content Management System",
+    "siteUrl": "https://example.com",
+    "apiKey": "sk_test_123456789",
+    "enablePreview": true,
+    "enableVersioning": false
+  }
+}
