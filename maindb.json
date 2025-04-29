@@ -50,6 +50,37 @@
               "title": "imglink",
               "type": "string",
               "value": "/img"
+            },
+            {
+              "title": "imgAlt",
+              "type": "string",
+              "value": "Hero image\n"
+            }
+          ]
+        },
+        {
+          "title": "header",
+          "page": "home",
+          "properties": [
+            {
+              "title": "logo",
+              "type": "string",
+              "value": "/logo"
+            },
+            {
+              "title": "menuitem1",
+              "type": "string",
+              "value": "home"
+            },
+            {
+              "title": "menuitem2",
+              "type": "string",
+              "value": "/case-studies"
+            },
+            {
+              "title": "solution",
+              "type": "array",
+              "value": "[\"item1\",\"item2\"]"
             }
           ]
         }

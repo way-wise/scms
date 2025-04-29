@@ -6,12 +6,11 @@ import { StarIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const { data: heroData } = useData(
+  const { data: StaticHeroData } = useData(
     "/api/pages/section?slug=home&sectionTitle=hero"
   );
 
   // Add safety checks before destructuring
-  const properties = heroData?.properties || [];
   const [
     title = {},
     desc = {},
@@ -19,7 +18,8 @@ export default function HeroSection() {
     rating = {},
     ratingText = {},
     imglink = {},
-  ] = properties;
+    imgAlt = {},
+  ] = StaticHeroData?.properties || [];
 
   return (
     <section className="container mx-auto px-4 py-16 md:py-24">
@@ -56,7 +56,7 @@ export default function HeroSection() {
         <div className="relative">
           <Image
             src={imglink.value || "/placeholder.svg"}
-            alt="AI voice agent for healthcare"
+            alt={imgAlt.value || imglink.value}
             width={600}
             height={400}
             className="rounded-lg shadow-lg"

@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useData } from "@/lib/utils";
 
 interface NavigationItem {
   label: string;
@@ -18,16 +19,12 @@ interface NavigationItem {
   children?: Array<{ label: string; url: string }>;
 }
 
-interface HeaderProps {
-  logo: string;
-  navigation: NavigationItem[];
-  ctaButton: {
-    label: string;
-    url: string;
-  };
-}
+export default function Header() {
+  const { data: StaticHeaderData } = useData(
+    "/api/pages/section?slug=home&sectionTitle=header"
+  );
 
-export default function Header({ logo, navigation, ctaButton }: HeaderProps) {
+  console.log(StaticHeaderData);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -36,16 +33,16 @@ export default function Header({ logo, navigation, ctaButton }: HeaderProps) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
+            {/* <Image
               src={logo || "/placeholder.svg"}
               alt="Logo"
               width={120}
               height={40}
-            />
+            /> */}
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item, index) => (
               <div key={index} className="relative group">
                 {item.children ? (
@@ -72,14 +69,14 @@ export default function Header({ logo, navigation, ctaButton }: HeaderProps) {
                 )}
               </div>
             ))}
-          </nav>
+          </nav> */}
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <Button className="bg-indigo-600 hover:bg-indigo-700">
               {ctaButton.label}
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button
@@ -98,7 +95,7 @@ export default function Header({ logo, navigation, ctaButton }: HeaderProps) {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 py-4">
-          <div className="container mx-auto px-4 space-y-4">
+          {/* <div className="container mx-auto px-4 space-y-4">
             {navigation.map((item, index) => (
               <div key={index} className="py-2">
                 {item.children ? (
@@ -136,7 +133,7 @@ export default function Header({ logo, navigation, ctaButton }: HeaderProps) {
                 {ctaButton.label}
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </header>
